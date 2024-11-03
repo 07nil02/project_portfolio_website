@@ -465,8 +465,9 @@ html{
   .hero-content h1{
     font-size: 2rem;
   }
+  #about{height: auto;}
   .content{margin-left: 0px;}
   #contact{margin-left: 0px;}
   .skills{margin-left: 0px;}
-  .projects{margin-left: 0px;}
+  .projects{margin-left: 0px; height: auto;}
 }
