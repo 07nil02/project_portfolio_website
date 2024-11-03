@@ -184,7 +184,10 @@ html{
   margin-left: 260px;
 }
 .text{
-  margin-left: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
 }
 .content h2{
   font-size: 52px;
@@ -240,8 +243,7 @@ html{
 }
 #about{
   width: 100%;
-  margin: 0;
-  padding: 0;
+  padding: 40px 20px;
   height: 100vh;
   box-sizing: border-box;
   background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url("pngtree-a-freelance-photographer-s-workspace-3d-illustration-of-a-camera-laptop-image_3681816.jpg");
@@ -255,7 +257,9 @@ html{
   margin-left: 256px;
   height: 100vh;
   padding: 40px 20px; 
-  background: rgba(0, 0, 0, 0.7); 
+  background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url("1e25d302451b2b45bb1250293ae0b4ce.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,6 +273,11 @@ html{
   border-radius: 8px;
   padding: 20px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.container:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
 }
 
 .form-box {
@@ -332,6 +341,116 @@ html{
   background-color: #fff; 
   color: goldenrod;
 }
+.skills {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("photo-1481151500463-1fa2dd2d5dbe.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 256px;
+}
+
+.skills .contain {
+  max-width: 800px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills .contain:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+
+.skills h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: goldenrod;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills ul li {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.skills ul li i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+.projects {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("ai-generated-front-view-office-desk-with-office-tools-computer-laptop-on-wood-table-background-with-copy-space-generative-ai-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 256px;
+}
+.projects h2{
+  font-size: 52px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: goldenrod;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer; 
+  transition: transform 0.2s;
+  text-align: center;
+  width: 200px;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-description {
+  max-width: 800px; 
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+.project-item img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid goldenrod;
+}
+
 @media(min-width:900px){
   .navbar{display: none;}
   .topnav{display: none;}
@@ -348,4 +467,6 @@ html{
   }
   .content{margin-left: 0px;}
   #contact{margin-left: 0px;}
+  .skills{margin-left: 0px;}
+  .projects{margin-left: 0px;}
 }

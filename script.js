@@ -20,3 +20,12 @@ menuicon.addEventListener("click",function(){
     icon.classList.add("fa-bars");
   }
 })
+const projectItems = document.querySelectorAll('.project-item');
+const projectDescription = document.getElementById('project-description');
+
+projectItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const description = item.getAttribute('data-description');
+    projectDescription.innerHTML = `<p>${description}</p>`;
+  });
+});
