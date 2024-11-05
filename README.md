@@ -3,6 +3,11 @@
 ## Description
 This is a personal portfolio website showcasing my projects and skills. It serves as an online representation of my work and provides potential clients and employers with insight into my capabilities.
 
+## Live Demo
+You can view the live version of my portfolio at the following link:
+
+**https://07nil02.github.io/project_portfolio_website/Proj.html**
+
 ## Installation
 No installation is required. This project consists of HTML, CSS, and JavaScript files. Simply download the repository and open the `Proj.html` file in your web browser to view the portfolio.
 
